@@ -1,0 +1,34 @@
+﻿<Window x:Class="Bombermen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bombermen"
+        mc:Ignorable="d"
+        Title="Menu" Height="700" Width="600" WindowStartupLocation="CenterScreen" >
+    <Grid Background="Black"  >
+        <Border BorderBrush="#FFFFFF0B" BorderThickness="5" Margin="25,15,27,354" Background="Black">
+            <Grid Background="#FFA01111" Height="290" VerticalAlignment="Top">
+                <Label Content="BOMBER" HorizontalAlignment="Center" Height="110" Margin="0 20" VerticalAlignment="Top" Width="422" FontSize="70" Foreground="#FFFFFF0B" FontFamily="Elephant">
+                    <Label.Effect>
+                        <DropShadowEffect/>
+                    </Label.Effect>
+                </Label>
+                <Label Content="MAN" HorizontalAlignment="Center" Height="100" Margin="0 80" VerticalAlignment="Top" Width="202" FontSize="70" Foreground="#FFFFFF0B" FontFamily="Elephant">
+                    <Label.Effect>
+                        <DropShadowEffect/>
+                    </Label.Effect>
+                </Label>
+            </Grid>
+        </Border>
+        <Label Content="Play" HorizontalAlignment="Center" Height="75" Margin="0,335,0,0" VerticalAlignment="Top" Width="120" Foreground="#FFFFFF0B" FontSize="40" MouseEnter="Play_focus" MouseLeave="Play_leave" MouseDoubleClick="Play_Click" />
+        <Label Content="Constructor" HorizontalAlignment="Center" Height="75" Margin="0,410,0,0" VerticalAlignment="Top" Width="225" Foreground="#FFFFFF0B" FontSize="40" MouseEnter="Constructor_focus" MouseLeave="Cons_leave" MouseDoubleClick="Constructor_Click"/>
+        <Label Content="Chose level" HorizontalAlignment="Center" Height="75" Margin="0,475,0,0" VerticalAlignment="Top" Width="225" Foreground="#FFFFFF0B" FontSize="40" MouseEnter="level_focus" MouseLeave="level_leave" MouseDoubleClick="Chose_Level_Click"/>
+        <Label Content="Exit" HorizontalAlignment="Center" Height="75" Margin="0,535,0,0" VerticalAlignment="Top" Width="100" Foreground="#FFFFFF0B" FontSize="40" MouseEnter="Exit_focus" MouseLeave="Exit_leave" MouseDoubleClick="Exit_Click"/>
+        <Ellipse x:Name="first" Margin="150,365,407,269"/>
+        <Ellipse x:Name="second" Margin="125,430,432,204" RenderTransformOrigin="0.5,0.5"/>
+        <Ellipse x:Name="third" Margin="125,500,432,134"/>
+        <Ellipse x:Name="fourth" Margin="195,560,362,74"/>
+
+    </Grid>
+</Window>
